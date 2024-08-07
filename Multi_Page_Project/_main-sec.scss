@@ -1,0 +1,92 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.main-section {
+    background-color: whitesmoke;
+
+    .main-1 {
+         background-color: rgb(2, 49, 49);
+        a {
+            text-decoration: none;
+            font-size: 50px;
+            text-align: center;
+            color: white;
+            font-family: Algerian;
+        }
+
+        a:hover {
+            transition-timing-function: ease-in-out;
+        }
+    }
+    .main-2{
+            padding: 0px;
+            margin: 0px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            box-sizing: border-box;
+            outline: none;
+            text-transform: capitalize;
+            transition: .2s linear; 
+        .container{
+            background:white;
+            padding: 15px 9px;
+            padding-bottom: 20px;
+        }
+        .heading{
+           align-items: center;
+            padding-bottom: 5px;
+            color: #fff;
+            text-shadow: 0 5px 10px rgba(0,0,0,.2);
+          font-size: 20px;
+          background-color: rgba(0,0,0,.7);
+          text-align: center;
+          font-style: italic;
+        }
+        .box-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+            gap: 15px;
+            .box{
+                box-shadow: 0 5px 10px rgba(0,0,0,.2);
+                border-radius: 5px;
+                text-align: center;
+                padding: 30px 20px;
+                img{
+                    height: 80px;
+                }
+                h3{
+                    color: #444;
+                    font-size: 22px;
+                    padding: 10px 0;
+                 }
+                 p{
+                    color: #333;
+                    font-size: 15px;
+                line-height: 1.8;
+                }
+                .btn{
+                    margin-top: 10px;
+                    display: inline-block;
+                    background: yellow;
+                    color: #000;
+                    font-size: 17px;
+                    border-radius: 4px;
+                    margin: 25px;
+                    text-decoration: none;
+                }
+            }
+            .box:hover{
+                box-shadow: 0 10px 15px darkgray;
+                transform: scale(1.03);
+            }
+        }
+        @media(max-width:768px){
+            .container{
+                padding: 20px;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,675 @@
+.navbar-1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  align-items: center;
+  line-height: 10px;
+  position: sticky;
+  top: 0%;
+}
+.navbar-1 .icon {
+  font-size: 25px;
+  color: green;
+}
+.navbar-1 ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+.navbar-1 ul li a:hover {
+  background-color: rgb(2, 40, 55);
+  color: white;
+  padding: 3px;
+  border-radius: 5px;
+}
+.navbar-1 ul li {
+  text-decoration: none;
+  color: rgb(2, 36, 50);
+}
+.navbar-1 ul li a {
+  text-decoration-line: none;
+  color: black;
+}
+.navbar-1 label {
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .navbar-1 ul {
+  display: block;
+  transition: 0.5s;
+  transform: scale(0.2s);
+}
+
+@media all and (max-width: 450px) {
+  .navbar-1 {
+    height: 80px;
+    width: 100%;
+    position: relative;
+  }
+  .navbar-1 label {
+    display: block;
+  }
+  .navbar-1 ul {
+    margin-left: 250px;
+    display: none;
+    position: absolute;
+    top: 80px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    align-items: center;
+    justify-content: end;
+    width: 50%;
+  }
+  .navbar-1 ul li {
+    color: black;
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-1 ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.main-section {
+  background-color: whitesmoke;
+}
+.main-section .main-1 {
+  background-color: rgb(2, 49, 49);
+}
+.main-section .main-1 a {
+  text-decoration: none;
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  font-family: Algerian;
+}
+.main-section .main-1 a:hover {
+  transition-timing-function: ease-in-out;
+}
+.main-section .main-2 {
+  padding: 0px;
+  margin: 0px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  box-sizing: border-box;
+  outline: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+.main-section .main-2 .container {
+  background: white;
+  padding: 15px 9px;
+  padding-bottom: 20px;
+}
+.main-section .main-2 .heading {
+  align-items: center;
+  padding-bottom: 5px;
+  color: #fff;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  font-style: italic;
+}
+.main-section .main-2 .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 15px;
+}
+.main-section .main-2 .box-container .box {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  text-align: center;
+  padding: 30px 20px;
+}
+.main-section .main-2 .box-container .box img {
+  height: 80px;
+}
+.main-section .main-2 .box-container .box h3 {
+  color: #444;
+  font-size: 22px;
+  padding: 10px 0;
+}
+.main-section .main-2 .box-container .box p {
+  color: #333;
+  font-size: 15px;
+  line-height: 1.8;
+}
+.main-section .main-2 .box-container .box .btn {
+  margin-top: 10px;
+  display: inline-block;
+  background: yellow;
+  color: #000;
+  font-size: 17px;
+  border-radius: 4px;
+  margin: 25px;
+  text-decoration: none;
+}
+.main-section .main-2 .box-container .box:hover {
+  box-shadow: 0 10px 15px darkgray;
+  transform: scale(1.03);
+}
+@media (max-width: 768px) {
+  .main-section .main-2 .container {
+    padding: 20px;
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.about {
+  text-align: center;
+  font-size: larger;
+}
+.about a {
+  text-decoration: none;
+  font-style: bold;
+  font-weight: 900;
+}
+
+.f-main {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(56, 54, 54);
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex: wrap;
+}
+.f-main .f-1 {
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.f-main .f-1 ul li {
+  list-style: none;
+  line-height: 30px;
+  color: white;
+}
+.f-main .f-2 {
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.f-main .f-2 ul li {
+  list-style: none;
+  line-height: 30px;
+  color: white;
+}
+.f-main .f-3 {
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.f-main .f-3 ul li {
+  list-style: none;
+  line-height: 30px;
+  color: white;
+}
+.f-main .f-4 {
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.f-main .f-4 ul li {
+  list-style: none;
+  line-height: 30px;
+  color: white;
+}
+
+.product-detels {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-detels .box1 {
+  flex: 1 1 100px;
+  margin: 5px;
+  background-color: lightblue;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.orderplace {
+  margin-top: 0px;
+}
+.orderplace input::-moz-placeholder {
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+.orderplace input::placeholder {
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+.orderplace .orderplace1 input {
+  width: 400px;
+  height: 30px;
+}
+.orderplace .orderplace2 {
+  margin-left: 39.3%;
+  height: 30px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.orderplace .orderplace2 i {
+  font-size: 12px;
+  font-weight: 200px;
+  padding: 10px 30px 10px 30px;
+  color: white;
+  background-color: rgb(11, 86, 226);
+}
+.orderplace .orderplace2 input {
+  height: 30px;
+  width: 185px;
+}
+.orderplace .orderplace3 {
+  margin-left: 39.3%;
+  height: 30px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.orderplace .orderplace3 input {
+  height: 30px;
+  width: 185px;
+}
+.orderplace .orderplace4 input {
+  height: 30px;
+  width: 400px;
+}
+.orderplace .orderplace5 {
+  word-spacing: 15px;
+}
+.orderplace .orderplace5 i {
+  padding: 10px 20px 10px 20px;
+  border: 1px solid black;
+  border-radius: 50px;
+  font-weight: 200px;
+  font-size: 10px;
+}
+.orderplace .orderplace6 {
+  word-spacing: 20px;
+}
+.orderplace .orderplace6 input:hover {
+  background-color: aqua;
+}
+.orderplace .orderplace6 input {
+  border: none;
+  font-size: 20px;
+  box-shadow: 2px 2px 5px 1px black;
+}
+
+@media screen and (max-width: 450px) {
+  .orderplace .orderplace3 {
+    margin-left: 2%;
+  }
+  .orderplace .orderplace2 {
+    margin-left: 2%;
+  }
+}
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(assets/backg2.jpg) no-repeat;
+  background-size: cover;
+}
+.login-container .container {
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login-container .container h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2em;
+  padding: 20px 0;
+}
+.login-container .container .forms {
+  position: relative;
+  border-bottom: 3px solid white;
+  width: 330px;
+  margin: 30px 0;
+  transition: 0.5s;
+}
+.login-container .container .forms input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.2em;
+  color: white;
+  padding: 0 30px 0 10px;
+}
+.login-container .container .forms input:focus ~ label,
+.login-container .container .forms input:valid ~ label {
+  top: -5px;
+}
+.login-container .container .forms label {
+  transition: 0.5s;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+  color: white;
+}
+.login-container .container .forms i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+  color: white;
+}
+.login-container .container p {
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+}
+.login-container .container p a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+.login-container .container p a:hover {
+  text-decoration: underline;
+  font-style: italic;
+}
+.login-container .container .btn {
+  width: 100%;
+  height: 50px;
+  border-radius: 40px;
+  border: none;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.login-container .container .btn a {
+  text-decoration: none;
+}
+.login-container .container .btn:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(assets/backg1.jpg) no-repeat;
+  background-size: cover;
+}
+.login-container .container {
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login-container .container h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2em;
+  padding: 20px 0;
+}
+.login-container .container .forms {
+  position: relative;
+  border-bottom: 3px solid white;
+  width: 330px;
+  margin: 30px 0;
+  transition: 0.5s;
+}
+.login-container .container .forms input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.2em;
+  color: white;
+  padding: 0 30px 0 10px;
+}
+.login-container .container .forms input:focus ~ label,
+.login-container .container .forms input:valid ~ label {
+  top: -5px;
+}
+.login-container .container .forms label {
+  transition: 0.5s;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+  color: white;
+}
+.login-container .container .forms i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+  color: white;
+}
+.login-container .container p {
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+}
+.login-container .container p a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+.login-container .container p a:hover {
+  text-decoration: underline;
+  font-style: bold;
+}
+.login-container .container .btn {
+  width: 100%;
+  height: 50px;
+  border-radius: 40px;
+  border: none;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.login-container .container .btn:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+}
+.parent .ch1 {
+  align-items: center;
+  margin: 10px;
+}
+.parent .ch2 {
+  align-items: center;
+  margin: 10px;
+}
+.parent .ch3 {
+  align-items: center;
+  margin: 10px;
+  align-items: center;
+  text-align: center;
+  line-height: 50px;
+  color: rgb(28, 192, 238);
+}
+.parent .ch3 a {
+  text-decoration: none;
+}
+.parent .ch3 .ch3-1 {
+  color: red;
+}
+.parent .ch3 .btn {
+  background-color: whitesmoke;
+  border-radius: 30px;
+}
+.parent .ch3 .btn1 {
+  padding: 5px 10px;
+  background-color: green;
+  font-size: 17px;
+  border-radius: 10px;
+  margin: 35px;
+}
+.parent .ch3 .btn1 a {
+  color: whitesmoke;
+}
+.parent .btn2 {
+  padding: 5px 10px;
+  background-color: orangered;
+  font-size: 17px;
+  border-radius: 10px;
+}
+.parent .btn2 a {
+  color: whitesmoke;
+}
+
+.heading {
+  color: white;
+  font-family: Algerian;
+  text-align: center;
+  background-color: rgb(24, 9, 9);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.address {
+  margin: 0px;
+  padding: 0px;
+}
+.address .container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid lightcoral;
+  background-color: white;
+  border-radius: 20px;
+  align-items: center;
+}
+.address .container .form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.address .container .form label {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.address .container .form input[type=location],
+.address .container .form input[type=text] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.address .container .form .btn {
+  align-items: center;
+  width: 96%;
+  padding: 5px;
+}
+.address .container .form .btn a {
+  text-decoration: none;
+  color: white;
+}
+.address .container .form .btn .btn1 {
+  margin: 0px 100px;
+  padding: 3px 10px;
+  border-radius: 7px;
+  font-size: 17px;
+  background-color: rgb(25, 74, 197);
+}
+.address .container .form .btn .btn2 {
+  padding: 3px 10px;
+  border-radius: 7px;
+  font-size: 17px;
+  background-color: green;
+}
+
+.p-seccess {
+  align-items: center;
+}
+.p-seccess .success {
+  height: 300px;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-weight: 900;
+  font-style: italic;
+  font-family: Algerian;
+  font-size: 250%;
+  background-color: rgba(0, 255, 0, 0.8);
+  position: relative;
+}
+.p-seccess .success h2 {
+  align-items: center;
+  position: absolute;
+  right: 480px;
+}
+.p-seccess .oder-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 250px;
+  width: 100%;
+  margin: 5px;
+  align-items: center;
+  background-color: antiquewhite;
+}
+.p-seccess .oder-details .oder1 {
+  border-radius: 50px;
+}
+.p-seccess .s-btn {
+  background-color: orange;
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 15px;
+}
+.p-seccess .s-btn a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  align-items: center;
+}/*# sourceMappingURL=Expert.css.map */
